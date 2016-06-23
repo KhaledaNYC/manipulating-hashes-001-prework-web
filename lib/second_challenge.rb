@@ -5,9 +5,11 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
-
-  #code your solution here!
-
-  
-
-end
+  foods = []
+  groceries.values.each do |food|
+  food.each do |ea|
+  	foods << ea
+  end
+   end
+  return foods
+  end
